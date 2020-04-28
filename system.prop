@@ -32,6 +32,9 @@ persist.dbg.wfc_avail_ovr=1
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 vendor.mm.enable.qcom_parser=16777215
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
 # Render
 debug.cpurend.vsync=false
 
