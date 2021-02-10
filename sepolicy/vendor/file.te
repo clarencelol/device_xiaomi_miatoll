@@ -14,6 +14,8 @@ type sysfs_msm_subsys, sysfs_type, fs_type;
 
 type thermal_link_device, dev_type;
 
+type sysfs_kgsl, sysfs_type, fs_type;
+
 type sysfs_touchpanel, fs_type, sysfs_type;
 
 type vendor_sysfs_iio, fs_type, sysfs_type;
