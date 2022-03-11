@@ -9,6 +9,7 @@ dontaudit { gmscore_app hal_camera_default } property_type:file r_file_perms;
 
 dontaudit {
   bootanim
+  hal_audio_default
   hal_graphics_allocator_default
   hal_sensors_default
   platform_app
