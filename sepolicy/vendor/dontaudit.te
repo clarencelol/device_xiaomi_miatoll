@@ -9,7 +9,6 @@ dontaudit { gmscore_app hal_camera_default } property_type:file r_file_perms;
 
 dontaudit {
   bootanim
-  hal_audio_default
   hal_graphics_allocator_default
   hal_sensors_default
   platform_app
@@ -21,6 +20,7 @@ dontaudit {
 } sysfs_msm_subsys:dir search;
 
 dontaudit {
+  hal_audio_default
   vendor_hal_neuralnetworks_default
   vendor_qti_init_shell
   rild
@@ -35,6 +35,22 @@ dontaudit gmscore_app {
 # Ignore in user builds
 dontaudit traced_probes debugfs_tracing_debug:file rw_file_perms;
 dontaudit hal_atrace_default debugfs_tracing_debug:file rw_file_perms;
+
+# We're not using diag iface on user build unless necessary
+dontaudit {
+    hal_audio_default
+    hal_sensors_default
+    rild
+    vendor_adpl
+    vendor_cnd
+    vendor_dpmd
+    vendor_hal_imsrtp
+    vendor_hal_rcsservice
+    vendor_ims
+    vendor_netmgrd
+    vendor_qti
+    vendor_sensors_qti
+} vendor_diag_device:chr_file rw_file_perms;
 
 # why would a script want to access rootfs?
 dontaudit vendor_wcnss_service rootfs:dir { open read };
