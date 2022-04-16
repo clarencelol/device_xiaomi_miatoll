@@ -129,6 +129,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.sf.enable_egl_image_tracker=1
+debug.sf.hw=1
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.has_HDR_display=true
