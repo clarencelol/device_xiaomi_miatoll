@@ -464,6 +464,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.systemuicompilerfilter=speed
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI \
+    Launcher3QuickStep
 
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
