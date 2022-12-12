@@ -126,6 +126,10 @@ ro.crypto.volume.options=::v2
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
 
 # Display
 debug.sf.enable_egl_image_tracker=1
