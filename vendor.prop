@@ -132,6 +132,7 @@ dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 
 # Display
+debug.sf.auto_latch_unsignaled=false
 debug.sf.enable_egl_image_tracker=1
 debug.sf.hw=1
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
