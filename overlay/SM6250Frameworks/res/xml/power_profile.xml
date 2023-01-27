@@ -51,6 +51,7 @@
         <value>1996800</value>
         <value>2112000</value>
         <value>2208000</value>
+        <value>2323200</value>
     </array>
     <array name="cpu.core_power.cluster0">
         <value>4.2</value>
@@ -77,6 +78,7 @@
         <value>257.83</value>
         <value>289.78</value>
         <value>311.24</value>
+        <value>364.31</value>
     </array>
     <array name="memory.bandwidths">
         <value>22.7</value>
