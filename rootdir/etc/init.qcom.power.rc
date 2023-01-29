@@ -29,7 +29,12 @@ on enable-low-power
     # Apply settings for atoll
 
     # Enable bus-dcvs
+    write /proc/sys/kernel/sched_upmigrate 95
+    write /proc/sys/kernel/sched_downmigrate 85
+
+    # Enable bus-dcvs
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/governor bw_hwmon
+    write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/polling_interval 50
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/mbps_zones "2288 4577 7110 9155 12298 14236"
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/sample_ms 4
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent 68
@@ -39,9 +44,10 @@ on enable-low-power
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/guard_band_mbps 0
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/up_scale 250
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/idle_mbps 1600
-    write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/polling_interval 50
+    write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/max_freq 14236
 
     write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/governor bw_hwmon
+    write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/polling_interval 40
     write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/mbps_zones "1144 1720 2086 2929 3879 5931 6881 8137"
     write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/sample_ms 4
     write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/io_percent 68
@@ -51,10 +57,11 @@ on enable-low-power
     write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/guard_band_mbps 0
     write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/up_scale 250
     write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/idle_mbps 1600
-    write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/polling_interval 40
+    write /sys/devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq/soc:qcom,cpu-llcc-ddr-bw/max_freq 8136
 
     write /sys/devices/virtual/npu/msm_npu/pwr 1
     write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/governor bw_hwmon
+    write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/polling_interval 40
     write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/bw_hwmon/mbps_zones "1144 1720 2086 2929 3879 5931 6881 8137"
     write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/bw_hwmon/sample_ms 4
     write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/bw_hwmon/io_percent 80
@@ -64,8 +71,8 @@ on enable-low-power
     write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/bw_hwmon/guard_band_mbps 0
     write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/bw_hwmon/up_scale 250
     write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/bw_hwmon/idle_mbps 0
-    write /sys/devices/platform/soc/soc:qcom,npu-npu-ddr-bw/devfreq/soc:qcom,npu-npu-ddr-bw/polling_interval 40
     write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/governor bw_hwmon
+    write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/polling_interval 40
     write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/mbps_zones "1144 1720 2086 2929 3879 5931 6881 8137"
     write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/sample_ms 4
     write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/io_percent 80
@@ -75,7 +82,6 @@ on enable-low-power
     write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/guard_band_mbps 0
     write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/up_scale 250
     write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/idle_mbps 0
-    write /sys/devices/platform/soc/soc:qcom,npudsp-npu-ddr-bw/devfreq/soc:qcom,npudsp-npu-ddr-bw/polling_interval 40
     write /sys/devices/virtual/npu/msm_npu/pwr 0
 
     # Enable mem_latency governor for L3, LLCC, and DDR scaling
@@ -108,6 +114,9 @@ on enable-low-power
     write /sys/devices/platform/soc/soc:qcom,cdsp-cdsp-l3-lat/devfreq/soc:qcom,cdsp-cdsp-l3-lat/governor cdspl3
 
     # Enable compute governor for gold latfloor
+    write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-ddr-latfloor/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/governor compute
+    write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-ddr-latfloor/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/polling_interval 10
+
     write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/governor compute
     write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/polling_interval 10
 
