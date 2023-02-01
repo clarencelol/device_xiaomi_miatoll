@@ -371,6 +371,11 @@ vendor/lib64/camera/com.qti.tuned.sunny_ov32a1q.bin|ea825eadeacdc02debdf1b640670
 # Camera sensors (joyeuse) - from V12.5.7.0.RJZMIXM
 vendor/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin|c2cf28a6473bc3927f418623886abf39bd069341
 
+# Camera (Megvii) - from V12.5.7.0.RJZMIXM
+vendor/etc/camera/megviifacepp_0_5_2_model|a2b8751f04d94f0634453c40426e66b0a1283da1
+vendor/lib64/libMegviiFacepp-0.5.2.so|a439145c3700d62446af21fe385775e6d5cb1a9a
+vendor/lib64/libmegface.so|8f67d986f23a110e48a2c6c57024ac3dee4993aa
+
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc

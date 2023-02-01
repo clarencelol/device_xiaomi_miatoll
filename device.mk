@@ -66,8 +66,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libMegviiFacepp-0.5.2 \
-    libmegface \
     libpiex_shim
 
 PRODUCT_PACKAGES += \
