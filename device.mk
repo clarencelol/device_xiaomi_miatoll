@@ -19,8 +19,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.soundtrigger@2.2-impl
+    android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -39,8 +38,7 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libspkrprot \
     libtinycompress \
-    libvolumelistener \
-    sound_trigger.primary.atoll:32
+    libvolumelistener
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
