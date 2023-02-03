@@ -144,6 +144,7 @@ dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 
 # Display
+debug.sdm.support_writeback=0
 debug.sf.auto_latch_unsignaled=false
 debug.sf.enable_egl_image_tracker=1
 debug.sf.enable_gl_backpressure=1
