@@ -123,7 +123,7 @@ ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
-camera.disable_zsl_mode=true
+camera.disable_zsl_mode=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 # Chipset
@@ -142,6 +142,12 @@ dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
+
+# Data
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+ro.telephony.iwlan_operation_mode=legacy
+ro.vendor.use_data_netmgrd=true
 
 # Display
 debug.sdm.support_writeback=0
@@ -162,6 +168,7 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
+vendor.display.comp_mask=0
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.display.disable_decimation=1
 vendor.display.disable_excl_rect=0
@@ -169,6 +176,7 @@ vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_inline_rotator=1
+vendor.display.disable_scaler=0
 vendor.display.disable_ui_3d_tonemap=1
 vendor.display.enable_default_color_mode=0
 vendor.display.enable_null_display=0
@@ -177,6 +185,10 @@ vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+vendor.gralloc.disable_ubwc=0
+
+# DPM
+persist.vendor.dpmhalservice.enable=1
 
 # DRM
 drm.service.enabled=true
@@ -209,14 +221,17 @@ ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
 persist.radio.multisim.config=dsds
+persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
+persist.vendor.radio.sib16_support=1
 ro.telephony.default_network=22,20
-ro.telephony.iwlan_operation_mode=legacy
 
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
