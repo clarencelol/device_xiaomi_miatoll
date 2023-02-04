@@ -146,6 +146,7 @@ dalvik.vm.dex2oat-threads=8
 # Display
 debug.sdm.support_writeback=0
 debug.sf.auto_latch_unsignaled=false
+debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.hw=1
