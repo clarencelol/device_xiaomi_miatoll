@@ -10,6 +10,9 @@ ro.charger.enable_suspend=true
 # CNE
 persist.vendor.cne.feature=1
 
+# Data
+persist.data.df.dev_name=rmnet_usb0
+
 # Disable MTE Async for system server
 arm64.memtag.process.system_server=off
 
@@ -48,11 +51,31 @@ persist.log.tag.TrafficStats=S
 persist.log.tag.ContrastColorUtil=S
 
 # Media
+media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+ro.media.recorder-max-base-layer-fps=60
 vendor.mm.enable.qcom_parser=16777215
 
 # Pre-Rendering
 ro.vendor.perf.scroll_opt=true
+
+# Radio
+DEVICE_PROVISIONED=1
+persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.manual_nw_rej_ct=1
+persist.vendor.radio.report_codec=1
+persist.vendor.radio.redir_party_num=1
+ro.telephony.default_network=33,33
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ril.subscription.types=NV,RUIM
+telephony.lteOnCdmaDevice=1
 
 # Render
 debug.cpurend.vsync=false
@@ -62,6 +85,9 @@ persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
+
+# Time services
+persist.timed.enable=true
 
 # WFD
 persist.debug.wfd.enable=1
