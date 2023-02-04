@@ -57,10 +57,6 @@ ro.vendor.perf.scroll_opt=true
 # Render
 debug.cpurend.vsync=false
 
-# SkiaGL Threaded
-debug.renderengine.backend=skiaglthreaded
-debug.hwui.renderer=skiagl
-
 # Telephony
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugLogs=1
