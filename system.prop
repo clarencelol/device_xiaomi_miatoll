@@ -4,6 +4,10 @@ ro.apex.updatable=false
 # Audio
 audio.offload.min.duration.secs=30
 
+# Blur
+ro.launcher.blur.appLaunch=0
+ro.surface_flinger.supports_background_blur=0
+
 # Charger
 ro.charger.enable_suspend=true
 
