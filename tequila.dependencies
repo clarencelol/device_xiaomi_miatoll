@@ -1,0 +1,29 @@
+[
+  {
+    "repository": "platform_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  },
+  {
+    "repository": "platform_device_xiaomi_miatoll",
+    "target_path": "device/xiaomi/miatoll"
+  },
+  {
+    "repository": "platform_kernel_xiaomi_miatoll",
+    "target_path": "kernel/xiaomi/miatoll"
+  },
+  {
+    "remote": "tequila-gitlab",
+    "repository": "platform_vendor_xiaomi_miatoll",
+    "target_path": "vendor/xiaomi/miatoll"
+  },
+  {
+    "remote": "tequila-gitlab",
+    "repository": "platform_vendor_xiaomi_miatoll-fw",
+    "target_path": "vendor/xiaomi/miatoll-fw"
+  },
+  {
+    "remote": "tequila-gitlab",
+    "repository": "platform_vendor_xiaomi_miatoll-gcam",
+    "target_path": "vendor/xiaomi/miatoll-gcam"
+  }
+]
