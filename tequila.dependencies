@@ -20,10 +20,5 @@
     "remote": "tequila-gitlab",
     "repository": "platform_vendor_xiaomi_miatoll-fw",
     "target_path": "vendor/xiaomi/miatoll-fw"
-  },
-  {
-    "remote": "tequila-gitlab",
-    "repository": "platform_vendor_xiaomi_miatoll-gcam",
-    "target_path": "vendor/xiaomi/miatoll-gcam"
   }
 ]
