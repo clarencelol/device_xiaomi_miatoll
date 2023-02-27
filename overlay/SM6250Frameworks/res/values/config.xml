@@ -589,6 +589,7 @@
         <item>com.android.camera</item>
         <item>org.lineageos.aperture</item>
         <item>org.lineageos.aperture.dev</item>
+        <item>org.pixelexperience.faceunlock</item>
     </string-array>
 
     <!-- The list of components which should be automatically disabled for a specific device. -->
