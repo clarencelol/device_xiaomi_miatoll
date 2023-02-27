@@ -587,6 +587,8 @@
     <string-array name="config_cameraAuxPackageAllowList" translatable="false">
         <item>org.codeaurora.snapcam</item>
         <item>com.android.camera</item>
+        <item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
     </string-array>
 
     <!-- The list of components which should be automatically disabled for a specific device. -->
