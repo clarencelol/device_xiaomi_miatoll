@@ -31,6 +31,9 @@ debug.performance.tuning=1
 # DPM
 persist.vendor.dpm.feature=11
 
+# Ftrace
+persist.debug.ftrace_events_disable=Yes
+
 # FUSE
 persist.sys.fuse.passthrough.enable=true
 
@@ -41,6 +44,9 @@ ro.vendor.qti.va_aosp.support=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+
+# Iorapd
+ro.iorapd.enable=false
 
 # Logs
 persist.log.tag.AnalyticsService=S
