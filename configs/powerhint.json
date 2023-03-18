@@ -16,8 +16,7 @@
       "Values": [
         "9999999",
 	"1708800",
-        "1324800",
-        "576000"
+        "1324800"
       ],
       "ResetOnInit": true
     },
@@ -26,7 +25,8 @@
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1555200"
+        "1555200",
+        "979200"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -37,8 +37,7 @@
       "Values": [
         "9999999",
 	"1900800",
-	"825600",
-        "652800"
+        "979200"
       ],
       "ResetOnInit": true
     },
@@ -219,7 +218,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "825600"
+      "Value": "979200"
     },
     {
       "PowerHint": "INTERACTION",
