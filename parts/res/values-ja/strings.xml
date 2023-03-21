@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2022 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">アンビエント表示</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_enable">Mi サウンドエンハンサー</string>
+    <string name="dirac_title">Mi サウンドエンハンサー</string>
+    <string name="dirac_summary">オーディオ品質を最適化</string>
+    <string name="dirac_headset_title">ヘッドフォンの種類を選択</string>
+    <string name="dirac_preset_title">プリセットを選択してください</string>
+
+    <string name="dirac_hifi_title">Hi-Fi オーディオ</string>
+    <string name="dirac_hifi_summary">ノイズやひずみを低減し、オーディオ品質を向上させる</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi の有効化</string>
+
+    <string name="dirac_headset_default">デフォルト</string>
+    <string name="dirac_headset_earbuds">Mi イヤーバッド</string>
+    <string name="dirac_headset_in_ear_2013">Mi インイヤー (2013)</string>
+    <string name="dirac_headset_piston_1">Mi ピストン 1</string>
+    <string name="dirac_headset_general">一般</string>
+    <string name="dirac_headset_general_inear">一般的なインイヤー型</string>
+    <string name="dirac_headset_piston_basic">ベーシック版</string>
+    <string name="dirac_headset_piston_2">Mi ピストン 2</string>
+    <string name="dirac_headset_piston_standard">スタンダード版</string>
+    <string name="dirac_headset_headphone">Mi ヘッドフォン</string>
+    <string name="dirac_headset_piston_youth">青春版</string>
+    <string name="dirac_headset_piston_color">カラー版</string>
+    <string name="dirac_headset_in_ear">Mi インイヤー</string>
+    <string name="dirac_headset_capsule">Mi カプセル</string>
+    <string name="dirac_headset_in_ear_pro">Mi インイヤー Pro</string>
+    <string name="dirac_headset_comfort">Mi コンフォート</string>
+    <string name="dirac_headset_reduction_noise">Mi ノイズキャンセリング Type-C</string>
+    <string name="dirac_headset_cancelling">Mi ノイズキャンセリング 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi ハーフインイヤー</string>
+    <string name="dirac_headset_in_ear2">Mi インイヤー2</string>
+    <string name="dirac_headset_earphone_basic">Mi イヤフォン ベーシック</string>
+    <string name="dirac_headset_earphone">Mi イヤホン</string>
+
+    <string name="dirac_preset_default">デフォルト</string>
+    <string name="dirac_preset_rock">ロック</string>
+    <string name="dirac_preset_jazz">ジャズ</string>
+    <string name="dirac_preset_pop">ポップ</string>
+    <string name="dirac_preset_classical">クラシック</string>
+    <string name="dirac_preset_hiphop">ヒップホップ</string>
+    <string name="dirac_preset_blues">ブルース</string>
+    <string name="dirac_preset_electronic">エレクトロニック</string>
+    <string name="dirac_preset_country">カントリー</string>
+    <string name="dirac_preset_dance">ダンス</string>
+    <string name="dirac_preset_metal">メタル</string>
+    <string name="dirac_preset_bass_booster">低音強調</string>
+    <string name="dirac_preset_live">ライブ</string>
+    <string name="dirac_preset_balanced">バランス</string>
+    <string name="dirac_preset_bass_reduction">低音の低減</string>
+    <string name="dirac_preset_treble_reduction">高音の低減</string>
+    <string name="dirac_preset_soft_bass">ソフトな低音</string>
+    <string name="dirac_preset_soft_treble">ソフトな高音</string>
+
+    <!-- Dirac sound optimization profiles -->
+    <string name="music_headset_scenario_intelligent">スマート</string>
+    <string name="music_headset_scenario_music">音楽</string>
+    <string name="music_headset_scenario_video">ビデオ</string>
+    <string name="music_headset_scenario_vocal">音声</string>
+
+    <!-- Clear speaker -->
+    <string name="clear_speaker_title">スピーカー掃除</string>
+    <string name="clear_speaker_summary">30秒音楽を鳴らしてスピーカーを清掃する</string>
+    <string name="clear_speaker_description">ほこりでスピーカーが軽く汚れている時に1~2度この機能を実行して下さい。メディア音量を最大に設定します。\n\nスピーカーの汚れがひどい場合は、画面を伏せるように端末を置いてから2~5回実行して下さい。</string>
+</resources>
