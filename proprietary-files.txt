@@ -59,8 +59,14 @@ vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib/rfsa/adsp/tas25xx_TI_0.bin
+
+# ADSP Modules (Misound) - from sweet V14.0.2.0.TKFEUXM
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin|bd7aa75d2f402e08f8d951f80d05c045e292a593
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin|bd7aa75d2f402e08f8d951f80d05c045e292a593
+vendor/lib/rfsa/adsp/misound_res.bin|d08fb852de9a354f60c18cd5186d2e1cdbbd2ad4
+vendor/lib/rfsa/adsp/misound_res_headphone.bin|32133fcbb9464169dd3d58f045e161b54f6afa9d
+vendor/lib/rfsa/adsp/misound_res_spk.bin|2a9b899d2a57d9f2f13414e8a46eaef55e6f01ec
 
 # Alarm - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
 product/app/PowerOffAlarm/PowerOffAlarm.apk|bc906abd03e4a243201dde626b6580fd8a4f73ce
@@ -92,6 +98,9 @@ system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
+
+# Audio FX modules (Misound) - from sweet V14.0.2.0.TKFEUXM
+vendor/lib/soundfx/libmisoundfx.so|6110af80c61b87447611bde1e30ef3e0f44648b2
 
 # Battery
 vendor/bin/batterysecret
