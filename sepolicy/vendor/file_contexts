@@ -46,3 +46,6 @@
 /vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.pixel                     u:object_r:hal_thermal_default_exec:s0
 /vendor/bin/thermal_symlinks                                                      u:object_r:init-thermal-symlinks-sh_exec:s0
 /dev/thermal(/.*)?                                                                u:object_r:thermal_link_device:s0
+
+# UFS discard_max_bytes
+/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_mmc_host:s0
