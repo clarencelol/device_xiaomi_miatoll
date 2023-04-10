@@ -1,5 +1,5 @@
 # Unpinned blobs from V14.0.3.0.SJZMIXM (JOYEUSEGlobal)
-# curtana: V13.0.2.0.SJWMIXM (CURTANAGlobal)
+# curtana: V14.0.3.0.SJWMIXM (CURTANAGlobal)
 # excalibur: V13.0.2.0.SJXINXM (EXCALIBURINGlobal)
 
 # ACDB
@@ -356,7 +356,7 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
-# Camera sensors (curtana & gram)
+# Camera sensors (curtana & gram) - from curtana
 vendor/lib64/camera/com.qti.sensormodule.ofilm_gc02m1_filter.bin
 vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgm2.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_imx582.bin
@@ -378,17 +378,17 @@ vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_mirrorflip.bin
 vendor/lib64/camera/com.qti.tuned.sunny_gc02m1.bin
 vendor/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin
 
-# Camera sensors (excalibur)
+# Camera sensors (excalibur) - from excalibur
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov32a1q.bin
 vendor/lib64/camera/com.qti.tuned.sunny_ov32a1q.bin
 
 # Camera sensors (joyeuse)
 vendor/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin
 
-# Camera (Face Detection) - from V13.0.4.0.SJZMIXM
-vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model|a2b8751f04d94f0634453c40426e66b0a1283da1
-vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so|b52fa2d205cf8e83195322259a9586cb5ec0cb33
-vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so|807bd1a687d17a1a9e7b0ecb45efad1a0b16fcca
+# Camera (Face Detection)
+vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
+vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
+vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
 
 # CDSP
 vendor/bin/cdsprpcd
