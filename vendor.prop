@@ -150,7 +150,7 @@ ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=true
 
 # Display
-debug.egl.hw=0
+debug.egl.hw=1
 debug.mdpcomp.logs=0
 debug.sdm.support_writeback=0
 debug.sf.auto_latch_unsignaled=true
