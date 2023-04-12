@@ -32,13 +32,14 @@ on early-init
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 576000
 
     # configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 20000
-    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq 652800
+
+    # Disable EAS
+    write /proc/sys/kernel/sched_energy_aware 0
 
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
@@ -64,6 +65,10 @@ on init
     chown cameraserver cameraserver /dev/cpuset/camera-daemon
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
+
+    # report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo.,libunity.so,libfb.so,liblogic.so,libssgamesdkcronet.so,libil2cpp.so,com.activision."
+    write /proc/sys/kernel/sched_lib_mask_force 255
 
 on early-fs
     start vold
@@ -213,6 +218,9 @@ on property:sys.boot_completed=1
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
+
+    # Enable EAS
+    write /proc/sys/kernel/sched_energy_aware 1
 
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
