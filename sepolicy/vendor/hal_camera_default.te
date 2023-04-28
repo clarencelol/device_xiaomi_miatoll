@@ -15,7 +15,22 @@ allow hal_camera_default system_data_file:dir search;
 set_prop(hal_camera_default, vendor_camera_prop)
 
 allow hal_camera_default socket_device:sock_file write;
+allow hal_camera_default system_server:binder { call transfer };
+allow hal_camera_default platform_app:binder { call transfer };
+allow hal_camera_default priv_app:binder { call transfer };
 allow hal_camera_default proc_stat:file { open };
-
 allow hal_camera_default public_adsprpcd_file:file r_file_perms;
 allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
+allow hal_camera_default vendor_xdsp_device:chr_file { ioctl open read write };
+
+type vendor_hal_cameraperf_hwservice, hwservice_manager_type, protected_hwservice;
+type vendor_hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
+
+hal_server_domain(hal_camera_default, vendor_hal_cameraperf)
+hal_server_domain(hal_camera_default, vendor_hal_camerapostproc_xiaomi)
+
+add_hwservice(hal_camera_server, vendor_hal_cameraperf_hwservice)
+add_hwservice(hal_camera_server, vendor_hal_camerapostproc_xiaomi_hwservice)
+
+allow hal_camera_client vendor_hal_cameraperf_hwservice:hwservice_manager find;
+allow hal_camera_client vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
