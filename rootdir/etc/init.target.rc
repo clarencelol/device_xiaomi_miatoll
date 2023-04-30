@@ -230,6 +230,8 @@ on property:sys.boot_completed=1
     write /dev/cpuset/restricted/cpus 2-5
 
     # Setup runtime schedTune
+    write /dev/stune/camera-daemon/schedtune.prefer_idle 1
+    write /dev/stune/camera-daemon/schedtune.boost 0
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/foreground/schedtune.boost 0
     write /dev/stune/schedtune.prefer_idle 0
