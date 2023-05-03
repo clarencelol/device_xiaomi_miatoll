@@ -194,6 +194,9 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Graphics
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
