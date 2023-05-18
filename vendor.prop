@@ -151,7 +151,6 @@ debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.hw=0
-debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 ro.config.avoid_gfx_accel=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
