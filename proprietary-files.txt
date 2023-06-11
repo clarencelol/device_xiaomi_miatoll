@@ -522,7 +522,7 @@ vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # DPM (system) - from nuwa V14.0.5.0.UMBEUXM
-framework/tcmclient.jar|4e1dfaa243c67fec31b5a44086c9c417892761ae
+system/framework/tcmclient.jar|4e1dfaa243c67fec31b5a44086c9c417892761ae
 system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
