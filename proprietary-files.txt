@@ -97,6 +97,9 @@ vendor/lib/libsurround_3mic_proc.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 
 # Audio FX modules (Misound) - from sweet V14.0.2.0.TKFEUXM
