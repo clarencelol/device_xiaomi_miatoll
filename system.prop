@@ -77,7 +77,6 @@ persist.log.tag.ContrastColorUtil=S
 
 # Media
 media.aac_51_output_enabled=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
