@@ -102,6 +102,9 @@ vendor/lib/soundfx/libshoebox.so
 # Audio FX modules (Misound) - from sweet V14.0.2.0.TKFEUXM
 vendor/lib/soundfx/libmisoundfx.so|6110af80c61b87447611bde1e30ef3e0f44648b2
 
+# Audio FX modules (Spatial Audio) - from cheetah-user 13 230805.001 10316531 release-keys
+vendor/lib/soundfx/libspatialaudio.so|b26727b8887dad56f5e183f7145487c88bd2f065
+
 # Battery
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
