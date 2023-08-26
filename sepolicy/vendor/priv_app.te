@@ -1,6 +1,1 @@
-allow priv_app hal_camera_default:binder { call transfer };
-allow priv_app hal_camera_default:fd *;
-allow priv_app vendor_audio_prop:file { getattr open read map };
-allow priv_app vendor_display_prop:file { getattr open read map };
 allow priv_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
-allow priv_app vendor_qdsp_device:chr_file { ioctl open read write };

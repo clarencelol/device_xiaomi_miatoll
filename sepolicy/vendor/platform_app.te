@@ -1,24 +1,6 @@
-typeattribute platform_app system_executes_vendor_violators;
-typeattribute platform_app halclientdomain;
-typeattribute platform_app vendor_hal_camerapostproc_xiaomi_client;
-
-allow platform_app adsprpcd_file:dir { getattr open read search };
-allow platform_app adsprpcd_file:file { getattr open read };
-allow platform_app app_data_file:file { execute };
-allow platform_app cgroup:file r_file_perms;
-allow platform_app hal_camera_default:binder { call transfer };
-allow platform_app hal_camera_default:fd *;
 allow platform_app hal_misys_hwservice:hwservice_manager find;
-allow platform_app servicemanager:binder { call transfer };
-allow platform_app vendor_audio_prop:file { getattr open read map };
-allow platform_app vendor_camera_data_file:dir { append map r_dir_perms write };
-allow platform_app vendor_display_prop:file { getattr open read map };
 allow platform_app vendor_hal_camerapostproc_xiaomi:binder { call transfer };
 allow platform_app vendor_hal_camerapostproc_xiaomi:fd *;
 allow platform_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
-allow platform_app vendor_file:file { read open getattr map execute};
-allow platform_app vendor_hal_soter_hwservice:hwservice_manager find;
-allow platform_app vendor_qdsp_device:chr_file { ioctl open read write };
-allow platform_app vendor_xdsp_device:chr_file { ioctl open read write };
 
-get_prop(platform_app, vendor_audio_prop);
+typeattribute platform_app vendor_hal_camerapostproc_xiaomi_client;

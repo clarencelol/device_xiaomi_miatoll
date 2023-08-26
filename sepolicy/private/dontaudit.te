@@ -1,5 +1,0 @@
-# please don't kill yourself unless it's allowed
-dontaudit linkerconfig self:capability kill;
-
-# b/152468658
-dontaudit vdc self:capability kill;

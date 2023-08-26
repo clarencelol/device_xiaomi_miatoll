@@ -1,26 +1,7 @@
-# For interfacing with PowerHAL
-hal_client_domain(hal_camera_default, hal_power)
-
-# Allow hal_camera_default to read to vendor_sysfs_kgsl
-r_dir_file(hal_camera_default, vendor_sysfs_kgsl)
+allow hal_camera_default mnt_vendor_file:dir search;
 
 # Allow hal_camera_default to read to mnt/vendor/persist/camera
 r_dir_file(hal_camera_default, vendor_persist_camera_file)
-r_dir_file(hal_camera_default, mnt_vendor_file)
-r_dir_file(hal_camera_default, vendor_persist_sensors_file)
-
-allow hal_camera_default proc_stat:file r_file_perms;
-allow hal_camera_default system_data_file:dir search;
-
-set_prop(hal_camera_default, vendor_camera_prop)
-
-allow hal_camera_default socket_device:sock_file write;
-allow hal_camera_default system_server:binder { call transfer };
-allow hal_camera_default platform_app:binder { call transfer };
-allow hal_camera_default priv_app:binder { call transfer };
-allow hal_camera_default proc_stat:file { open };
-allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
-allow hal_camera_default vendor_xdsp_device:chr_file { ioctl open read write };
 
 type vendor_hal_cameraperf_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
