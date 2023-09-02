@@ -42,4 +42,7 @@
     <!-- Pad content in navbar for rounded corners -->
     <dimen name="rounded_corner_content_padding">16dp</dimen>
 
+    <!--  Total minimum padding to enforce to ensure that the dot can always show  -->
+    <dimen name="ongoing_appops_dot_min_padding">16dp</dimen>
+
 </resources>
