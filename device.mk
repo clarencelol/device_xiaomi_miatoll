@@ -251,6 +251,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# Workaround for prebuilt Qualcomm neural network HAL
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
