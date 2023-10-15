@@ -139,7 +139,7 @@ ro.crypto.volume.options=::v2
 # Data
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
-ro.telephony.iwlan_operation_mode=legacy
+persist.vendor.sys.cnd.iwlan=1
 ro.vendor.use_data_netmgrd=true
 
 # Display
