@@ -157,8 +157,10 @@ ro.config.avoid_gfx_accel=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=4
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
+ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.sensortype=2
@@ -170,17 +172,20 @@ vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery=1
 vendor.display.disable_hw_recovery_dump=1
-vendor.display.disable_inline_rotator=1
-vendor.display.disable_rotator_downscale=1
-vendor.display.disable_scaler=1
-vendor.display.disable_ui_3d_tonemap=1
+vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
 vendor.display.enable_default_color_mode=0
+vendor.display.enable_early_wakeup=1
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
+vendor.display.use_smooth_motion=1
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+vendor.display.secure_preview_buffer_format=420_sp
+vendor.gralloc.secure_preview_buffer_format=420_sp
+vendor.gralloc.secure_preview_only=1
 vendor.gralloc.disable_ubwc=0
 
 # DPM
@@ -198,6 +203,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 ro.apk_verity.mode=2
 
 # Graphics
+persist.demo.hdmirotationlock=false
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
@@ -248,6 +254,13 @@ persist.rcs.supported=0
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.enable.mag_filter=true
 persist.vendor.sensors.support_direct_channel=false
+
+# Surfaceflingers
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
 
 # Spatial Audio
 ro.audio.spatializer_enabled=true
