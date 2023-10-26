@@ -1,17 +1,13 @@
 [
   {
+    "branch": "lineage-21",
+    "remote": "github",
     "repository": "LineageOS/android_hardware_sony_timekeep",
-    "target_path": "hardware/sony/timekeep",
-    "branch": "lineage-20",
-    "remote": "github"
+    "target_path": "hardware/sony/timekeep"
   },
   {
     "repository": "platform_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
-  },
-  {
-    "repository": "platform_device_xiaomi_miatoll",
-    "target_path": "device/xiaomi/miatoll"
   },
   {
     "repository": "platform_kernel_xiaomi_sm6250",
@@ -21,10 +17,5 @@
     "remote": "tequila-gitlab",
     "repository": "platform_vendor_xiaomi_miatoll",
     "target_path": "vendor/xiaomi/miatoll"
-  },
-  {
-    "remote": "tequila-gitlab",
-    "repository": "platform_vendor_xiaomi_miatoll-fw",
-    "target_path": "vendor/xiaomi/miatoll-fw"
   }
 ]
