@@ -34,6 +34,14 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>android.hardware.cas</name>
+        <version>1</version>
+        <interface>
+            <name>IMediaCasService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>android.hardware.drm</name>
         <version>1</version>
         <interface>
@@ -90,8 +98,16 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.wifi.supplicant</name>
+        <name>android.hardware.wifi</name>
         <version>1</version>
+        <interface>
+            <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.supplicant</name>
+        <version>2</version>
         <interface>
             <name>ISupplicant</name>
             <instance>default</instance>
