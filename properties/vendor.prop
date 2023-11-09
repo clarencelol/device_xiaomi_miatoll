@@ -175,6 +175,7 @@ vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
+vendor.display.disable_rotator_downscale=1
 vendor.display.disable_scaler=0
 vendor.display.enable_default_color_mode=0
 vendor.display.enable_early_wakeup=1
