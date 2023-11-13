@@ -174,9 +174,11 @@ vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery=1
 vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_inline_rotator=1
 vendor.display.disable_offline_rotator=1
 vendor.display.disable_rotator_downscale=1
-vendor.display.disable_scaler=0
+vendor.display.disable_scaler=1
+vendor.display.disable_ui_3d_tonemap=1
 vendor.display.enable_default_color_mode=0
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_null_display=0
@@ -257,13 +259,6 @@ persist.rcs.supported=0
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.enable.mag_filter=true
 persist.vendor.sensors.support_direct_channel=false
-
-# Surfaceflingers
-debug.sf.enable_advanced_sf_phase_offset=1
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
 
 # Spatial Audio
 ro.audio.spatializer_enabled=true
