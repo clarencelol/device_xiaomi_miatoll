@@ -207,16 +207,6 @@ service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-
    user root
    group root
 
-service vendor.thermal-hal-2-0 /vendor/bin/hw/android.hardware.thermal@2.0-service.pixel
-    override
-    interface android.hardware.thermal@1.0::IThermal default
-    interface android.hardware.thermal@2.0::IThermal default
-    class hal
-    user system
-    group system
-    priority -20
-    disabled
-
 service vendor.sensors_fixup /vendor/bin/init.sensors_fixup.sh
     class main
     user system
