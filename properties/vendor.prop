@@ -215,6 +215,7 @@ persist.sys.sf.native_mode=2
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
+graphics.gpu.profiler.support=true
 
 # HWUI
 debug.hwui.use_hint_manager=true
