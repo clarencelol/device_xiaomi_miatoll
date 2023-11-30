@@ -1,3 +1,6 @@
 attribute hal_misys;
 attribute hal_misys_client;
 attribute hal_misys_server;
+
+# Dolby
+hal_attribute_lineage(dms)
