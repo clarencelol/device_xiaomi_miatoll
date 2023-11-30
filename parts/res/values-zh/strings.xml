@@ -18,66 +18,6 @@
     <!-- Ambient settings -->
     <string name="ambient_enable">环境显示</string>
 
-    <!-- Dirac settings -->
-    <string name="dirac_enable">使用米音提升音质</string>
-    <string name="dirac_title">使用米音提升音质</string>
-    <string name="dirac_summary">优化音质</string>
-    <string name="dirac_headset_title">耳机类型设置</string>
-    <string name="dirac_preset_title">请选择预设效果</string>
-
-    <string name="dirac_hifi_title">使用 Hi-Fi 高保真播放</string>
-    <string name="dirac_hifi_summary">高度还原音源信息，原汁原味</string>
-    <string name="dirac_hifi_enable_title">启用 HI-FI</string>
-
-    <string name="dirac_headset_default">默认​​​​​</string>
-    <string name="dirac_headset_earbuds">小米耳塞式</string>
-    <string name="dirac_headset_in_ear_2013">小米圈铁 (2013)</string>
-    <string name="dirac_headset_piston_1">小米活塞 1</string>
-    <string name="dirac_headset_general">通用</string>
-    <string name="dirac_headset_general_inear">通用入耳式</string>
-    <string name="dirac_headset_piston_basic">小米活塞简装版</string>
-    <string name="dirac_headset_piston_2">小米活塞2</string>
-    <string name="dirac_headset_piston_standard">小米活塞标准版</string>
-    <string name="dirac_headset_headphone">小米头戴式</string>
-    <string name="dirac_headset_piston_youth">小米活塞青春版</string>
-    <string name="dirac_headset_piston_color">小米活塞炫彩版</string>
-    <string name="dirac_headset_in_ear">小米圈铁</string>
-    <string name="dirac_headset_capsule">小米胶囊</string>
-    <string name="dirac_headset_in_ear_pro">小米圈铁 Pro</string>
-    <string name="dirac_headset_comfort">小米头戴轻松版</string>
-    <string name="dirac_headset_reduction_noise">小米降噪 typeC</string>
-    <string name="dirac_headset_cancelling">小米降噪 3.5mm</string>
-    <string name="dirac_headset_half_in_ear">小米半入耳式</string>
-    <string name="dirac_headset_in_ear2">小米圈铁 2</string>
-    <string name="dirac_headset_earphone_basic">小米耳机基本款</string>
-    <string name="dirac_headset_earphone">小米耳机</string>
-
-    <string name="dirac_preset_default">默认​​​​​</string>
-    <string name="dirac_preset_rock">摇滚</string>
-    <string name="dirac_preset_jazz">爵士</string>
-    <string name="dirac_preset_pop">流行</string>
-    <string name="dirac_preset_classical">古典</string>
-    <string name="dirac_preset_hiphop">嘻哈</string>
-    <string name="dirac_preset_blues">蓝调</string>
-    <string name="dirac_preset_electronic">电子音乐</string>
-    <string name="dirac_preset_country">乡村</string>
-    <string name="dirac_preset_dance">舞曲</string>
-    <string name="dirac_preset_metal">金属</string>
-    <string name="dirac_preset_bass_booster">低音强化</string>
-    <string name="dirac_preset_live">实时</string>
-    <string name="dirac_preset_balanced">均衡</string>
-    <string name="dirac_preset_bass_reduction">低音弱化</string>
-    <string name="dirac_preset_treble_reduction">高音弱化</string>
-    <string name="dirac_preset_soft_bass">柔和低音</string>
-    <string name="dirac_preset_soft_treble">柔和高音</string>
-
-    <!-- Dirac sound optimization profiles -->
-    <string name="music_headset_scenario_select">场景优化</string>
-    <string name="music_headset_scenario_intelligent">智能</string>
-    <string name="music_headset_scenario_music">音乐</string>
-    <string name="music_headset_scenario_video">视频</string>
-    <string name="music_headset_scenario_vocal">人声</string>
-
     <!-- Clear speaker -->
     <string name="clear_speaker_title">清理扬声器</string>
     <string name="clear_speaker_summary">播放一段约 30 秒的音频来清理扬声器</string>
