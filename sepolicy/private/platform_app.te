@@ -1,4 +1,1 @@
 hal_client_domain(platform_app, hal_misys)
-
-# Lineage Health
-hal_client_domain(platform_app, hal_lineage_health)
