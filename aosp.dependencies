@@ -6,6 +6,7 @@
     "target_path": "hardware/sony/timekeep"
   },
   {
+    "remote": "pixelbuilds",
     "repository": "platform_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
   },
@@ -14,8 +15,8 @@
     "target_path": "kernel/xiaomi/sm6250"
   },
   {
-    "remote": "tequila-gitlab",
-    "repository": "platform_vendor_xiaomi_miatoll",
+    "remote": "pixelbuilds-blobs-gitlab",
+    "repository": "android_vendor_xiaomi_miatoll",
     "target_path": "vendor/xiaomi/miatoll"
   }
 ]
