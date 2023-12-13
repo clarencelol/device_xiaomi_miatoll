@@ -222,6 +222,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    libavservices_minijail_32 \
     libavservices_minijail \
     libavservices_minijail.vendor
 
@@ -521,7 +522,8 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    vendor.qti.hardware.display.config-V5-ndk
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
