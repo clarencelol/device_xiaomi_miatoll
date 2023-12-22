@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 Paranoid Android
+ * Copyright (C) 2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,20 +14,31 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.speaker;
+package org.lineageos.settings.thermal;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.widget.R;
 
-public class ClearSpeakerActivity extends CollapsingToolbarBaseActivity {
+public class ThermalSettingsActivity extends CollapsingToolbarBaseActivity {
+
+    private static final String TAG_THERMAL = "thermal";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new ClearSpeakerFragment())
-                .commit();
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+                new ThermalSettingsFragment(), TAG_THERMAL).commit();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return false;
     }
 }
