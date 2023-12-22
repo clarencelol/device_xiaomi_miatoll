@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.sensors;
+package org.lineageos.settings.doze;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -24,14 +24,11 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
 
-import org.lineageos.settings.doze.DozeUtils;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class ProximitySensor implements SensorEventListener {
-
     private static final boolean DEBUG = false;
     private static final String TAG = "ProximitySensor";
 
@@ -40,11 +37,13 @@ public class ProximitySensor implements SensorEventListener {
 
     // Minimum time until the device is considered to have been in the pocket: 2s
     private static final int POCKET_MIN_DELTA_NS = 2000 * 1000 * 1000;
-    private boolean mSawNear = false;
+
     private SensorManager mSensorManager;
     private Sensor mSensor;
     private Context mContext;
     private ExecutorService mExecutorService;
+
+    private boolean mSawNear = false;
     private long mInPocketTime = 0;
 
     public ProximitySensor(Context context) {
@@ -54,16 +53,14 @@ public class ProximitySensor implements SensorEventListener {
         mExecutorService = Executors.newSingleThreadExecutor();
     }
 
-    private Future<?> submit(Runnable runnable) {
-        return mExecutorService.submit(runnable);
-    }
+    private Future<?> submit(Runnable runnable) { return mExecutorService.submit(runnable); }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
         boolean isNear = event.values[0] < mSensor.getMaximumRange();
         if (mSawNear && !isNear) {
             if (shouldPulse(event.timestamp)) {
-                DozeUtils.launchDozePulse(mContext);
+                DozeUtils.wakeOrLaunchDozePulse(mContext);
             }
         } else {
             mInPocketTime = event.timestamp;
@@ -74,8 +71,8 @@ public class ProximitySensor implements SensorEventListener {
     private boolean shouldPulse(long timestamp) {
         long delta = timestamp - mInPocketTime;
 
-        if (DozeUtils.isHandwaveGestureEnabled(mContext) &&
-                DozeUtils.isPocketGestureEnabled(mContext)) {
+        if (DozeUtils.isHandwaveGestureEnabled(mContext)
+                && DozeUtils.isPocketGestureEnabled(mContext)) {
             return true;
         } else if (DozeUtils.isHandwaveGestureEnabled(mContext)) {
             return delta < HANDWAVE_MAX_DELTA_NS;
@@ -90,22 +87,17 @@ public class ProximitySensor implements SensorEventListener {
         /* Empty */
     }
 
-    public void enable() {
-        if (DEBUG) Log.d(TAG, "Enabling");
+    protected void enable() {
+        if (DEBUG)
+            Log.d(TAG, "Enabling");
         submit(() -> {
-            mSensorManager.registerListener(this, mSensor,
-                    SensorManager.SENSOR_DELAY_NORMAL);
+            mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
         });
     }
 
-    public void disable() {
-        if (DEBUG) Log.d(TAG, "Disabling");
-        submit(() -> {
-            mSensorManager.unregisterListener(this, mSensor);
-        });
-    }
-
-    public boolean getSawNear() {
-        return mSawNear;
+    protected void disable() {
+        if (DEBUG)
+            Log.d(TAG, "Disabling");
+        submit(() -> { mSensorManager.unregisterListener(this, mSensor); });
     }
 }
