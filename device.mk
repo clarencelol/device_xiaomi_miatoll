@@ -75,6 +75,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-V1-ndk.vendor
 
 PRODUCT_PACKAGES += \
+    libMegviiFacepp-0.5.2 \
+    libmegface \
     libpiex_shim
 
 PRODUCT_PACKAGES += \

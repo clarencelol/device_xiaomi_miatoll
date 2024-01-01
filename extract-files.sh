@@ -77,11 +77,6 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
-        vendor/lib64/hw/camera.qcom.so | vendor/lib64/libFaceDetectpp-0.5.2.so | vendor/lib64/libfacedet.so)
-            sed -i "s|libmegface.so|libfacedet.so|g" "${2}"
-            sed -i "s|libMegviiFacepp-0.5.2.so|libFaceDetectpp-0.5.2.so|g" "${2}"
-            sed -i "s|megviifacepp_0_5_2_model|facedetectpp_0_5_2_model|g" "${2}"
-            ;;
         # Fix NFC storage path
         vendor/etc/libnfc-nci.conf)
             sed -i "s/\/data\/nfc/\/data\/vendor\/nfc/g" "${2}"
