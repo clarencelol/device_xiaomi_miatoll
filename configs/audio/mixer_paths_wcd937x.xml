@@ -168,14 +168,12 @@
     <ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia17 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-    <ctl name="WSA_CDC_DMA_RX_0 Channels" value="One" />
     <ctl name="TERT_MI2S_RX Channels" value="One" />
     <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
     <ctl name="VI_FEED_TX Channels" value="Two" />
     <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="0" />
     <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="0" />
     <ctl name="TERT_MI2S_RX Format" value="UNPACKED" />
-    <ctl name="WSA_CDC_DMA_RX_0 Format" value="UNPACKED" />
     <ctl name="WSA_CDC_DMA_TX_0 Format" value="UNPACKED" />
     <ctl name="RX_CDC_DMA_RX_0 Format" value="UNPACKED" />
     <ctl name="TX_CDC_DMA_TX_3 Format" value="UNPACKED" />
@@ -190,7 +188,6 @@
     <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_48" />
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
-    <ctl name="WSA_CDC_DMA_RX_0 Port Mixer SLIM_7_TX" value="0" />
     <ctl name="TERT_MI2S_RX Port Mixer SLIM_7_TX" value="0" />
     <ctl name="RX_CDC_DMA_RX_0 Port Mixer SLIM_7_TX" value="0" />
     <!-- HFP end -->
@@ -215,8 +212,6 @@
     <!-- usb headset end -->
     <!-- fm -->
     <ctl name="SLIMBUS_8 LOOPBACK Volume" value="0" />
-    <ctl name="WSA_CDC_DMA_RX_0 Port Mixer SLIM_8_TX" value="0" />
-    <ctl name="WSA_CDC_DMA_RX_0_DL_HL Switch" value="0" />
     <ctl name="TERT_MI2S_RX Port Mixer SLIM_8_TX" value="0" />
     <ctl name="TERT_MI2S_RX_DL_HL Switch" value="0" />
     <ctl name="RX_CDC_DMA_RX_0 Port Mixer SLIM_8_TX" value="0" />
@@ -237,7 +232,6 @@
     <ctl name="Ultrasound Custom Setting 1" value="0" />
 
     <!-- Multimode Voice1 -->
-    <ctl name="WSA_CDC_DMA_RX_0_Voice Mixer VoiceMMode1" value="0" />
     <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode1" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode1" value="0" />
     <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="0" />
@@ -258,7 +252,6 @@
     <!-- Miltimode Voice1 end-->
 
     <!-- Multimode Voice2 -->
-    <ctl name="WSA_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="0" />
@@ -310,7 +303,6 @@
     <!-- Incall Music End -->
 
     <!-- compress-voip-call start -->
-    <ctl name="WSA_CDC_DMA_RX_0_Voice Mixer Voip" value="0" />
     <ctl name="TERT_MI2S_RX_Voice Mixer Voip" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer Voip" value="0" />
     <ctl name="Voip_Tx Mixer TX_CDC_DMA_TX_3_Voip" value="0" />
@@ -342,7 +334,6 @@
     <!-- split a2dp end-->
 
     <!-- ADSP testfwk -->
-    <ctl name="WSA_CDC_DMA_RX_0_DL_HL Switch" value="0" />
     <ctl name="TERT_MI2S_RX_DL_HL Switch" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="0" />
     <!-- ADSP testfwk end-->
