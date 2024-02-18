@@ -1346,10 +1346,8 @@ vendor/lib/hw/sound_trigger.primary.atoll.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib64/hw/sound_trigger.primary.atoll.so
 
-# Thermal engine - from sunfish - TQ3A.230805.001/10316531
-vendor/bin/thermal-engine|b96e997ab7c784b0529fa833a7ea33170d0bd066
-
 # Thermal
+vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
