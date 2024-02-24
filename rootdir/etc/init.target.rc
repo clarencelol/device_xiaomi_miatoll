@@ -219,6 +219,13 @@ service vendor.sensors_fixup /vendor/bin/init.sensors_fixup.sh
     group system
     oneshot
 
+service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
+    class late_start
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
@@ -245,6 +252,8 @@ on property:sys.boot_completed=1
     write /sys/block/zram0/comp_algorithm lz4
     # Mount swap partitions specified in fstab
     swapon_all /vendor/etc/fstab.qcom
+    # Set custom swappiness
+    start qcom-post-boot
 
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000
