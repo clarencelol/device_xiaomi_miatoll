@@ -47,6 +47,9 @@ vendor.audio.use.sw.ape.decoder=true
 vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 
+# Audio Amplifier
+ro.hardware.audio_amplifier=tas2562
+
 # Audio Feature
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
