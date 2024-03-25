@@ -323,6 +323,9 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     WifiOverlay
 
+PRODUCT_PACKAGES += \
+    SM6250LineageSDK
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
